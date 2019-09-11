@@ -48,7 +48,15 @@ namespace BloodDonation.DataAccess
 
         public void UpdateDonorDetails(DonorDetails dd)
         {
-            
+            var item = db.DonorDetails.Where(c => c.DonorID == dd.DonorID);
+            foreach (var i in item)
+            {
+                i.Name = dd.Name;
+                i.DOB = dd.DOB;
+                i.Weight = dd.Weight;
+                i.BloodGroup = dd.BloodGroup;
+                i.UnitCollected = dd.UnitCollected;
+            }
             db.SaveChanges();
         }
     }
