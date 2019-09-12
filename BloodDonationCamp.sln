@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonation.Entities", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonation.DataAccess", "BloodDonation.DataAccess\BloodDonation.DataAccess.csproj", "{1B1C862A-7123-4350-A179-B537C65A141F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web API", "Web API", "{8F72FD96-B45E-4756-A88B-D760289CD9BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonationWebApplication", "BloodDonationWebApplication\BloodDonationWebApplication.csproj", "{AF6E539C-EC51-4AB4-8D47-F2F64C81FF99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{1B1C862A-7123-4350-A179-B537C65A141F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B1C862A-7123-4350-A179-B537C65A141F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B1C862A-7123-4350-A179-B537C65A141F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6E539C-EC51-4AB4-8D47-F2F64C81FF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6E539C-EC51-4AB4-8D47-F2F64C81FF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6E539C-EC51-4AB4-8D47-F2F64C81FF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6E539C-EC51-4AB4-8D47-F2F64C81FF99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{983F1F87-70E8-49DC-B5B0-31B19D2E1344} = {961ACFEB-341E-463A-9AF6-B52F20E07A47}
 		{1B1C862A-7123-4350-A179-B537C65A141F} = {86950F0D-187B-4BAD-8875-3709EAF8E6FE}
+		{AF6E539C-EC51-4AB4-8D47-F2F64C81FF99} = {8F72FD96-B45E-4756-A88B-D760289CD9BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1D907C5-1ED5-493C-8B16-65ADF999BE0C}
