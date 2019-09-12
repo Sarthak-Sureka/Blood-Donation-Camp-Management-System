@@ -14,27 +14,24 @@ namespace BloodDonationWebApplication.Controllers
     {
         private BloodDonorRepository bdr = new BloodDonorRepository();
 
-        [Route("api/getdetails")]
         public List<DonorDetails> GetDetails()
         {
-             return JsonConvert.DeserializeObject<List<DonorDetails>>(bdr.ReadDonorDetails());
+            return JsonConvert.DeserializeObject<List<DonorDetails>>(bdr.ReadDonorDetails());
         }
 
-        [Route("api/postdetails")]
         public void PostDetails(string jsondata)
         {
             bdr.SaveDonorDetails(jsondata);
         }
 
-        [Route("api/deletedetails/{DonorId}")]
-        public void DeleteDetails(int DonorId)
+        public void DeleteDetails(int Id)
         {
-            bdr.DeleteDonorDetails(DonorId);
+            bdr.DeleteDonorDetails(Id);
         }
 
-        public void UpdateDetails()
+        public void PutDetails(DonorDetails d)
         {
-
+            bdr.UpdateDonorDetails(d);
         }
 
     }
