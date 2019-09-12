@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BloodDonationCampWindowsForms
 {
-    public partial class Form1 : Form
+    public partial class Delete : Form
     {
-        public Form1()
+        public Delete()
         {
             InitializeComponent();
+        }
+
+        private void Cancelbutton2_Click(object sender, EventArgs e)
+        {
+            IdtextBox1.Text = " ";
         }
     }
 }
