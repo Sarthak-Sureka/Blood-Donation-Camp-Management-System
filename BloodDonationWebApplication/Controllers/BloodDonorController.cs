@@ -20,10 +20,21 @@ namespace BloodDonationWebApplication.Controllers
              return JsonConvert.DeserializeObject<List<DonorDetails>>(bdr.ReadDonorDetails());
         }
 
-        [Route("api/postdetails/{jsondata}")]
+        [Route("api/postdetails")]
         public void PostDetails(string jsondata)
         {
             bdr.SaveDonorDetails(jsondata);
+        }
+
+        [Route("api/deletedetails/{DonorId}")]
+        public void DeleteDetails(int DonorId)
+        {
+            bdr.DeleteDonorDetails(DonorId);
+        }
+
+        public void UpdateDetails()
+        {
+
         }
 
     }
