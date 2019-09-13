@@ -51,7 +51,7 @@ namespace BloodDonation.DataAccess
 
         public string SearchDonorDetails(int DonorId)
         {
-            return db.DonorDetails.Where(c => c.DonorID == DonorId).ToString();
+            return db.DonorDetails.SingleOrDefault(c => c.DonorID == DonorId).ToString();
         }
 
         public void UpdateDonorDetails(string jsondata)

@@ -21,7 +21,7 @@ namespace BloodDonationCampWindowsForms
         {
             Operations o = new Operations();
             o.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

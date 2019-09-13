@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -31,7 +32,18 @@ namespace BloodDonationCampWindowsForms
 
         private void Deletebutton1_Click(object sender, EventArgs e)
         {
-
+            int i = int.Parse(IdtextBox1.Text);
+            WebApiHelper helper = new WebApiHelper(ConfigurationManager.AppSettings["uri"]+"/");
+            IdtextBox1.Text = "";
+            try
+            {
+                helper.Delete(i);
+                MessageBox.Show($"Donor Id: {i} successfully deleted");
+            }
+            catch(Exception)
+            {
+                MessageBox.Show($"Donor Id: {i} does not exist");
+            }
         }
     }
 }
