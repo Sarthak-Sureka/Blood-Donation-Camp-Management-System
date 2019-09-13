@@ -28,48 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.Nextbutton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Nextbutton
             // 
+            this.Nextbutton.BackColor = System.Drawing.Color.White;
+            this.Nextbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Nextbutton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nextbutton.Location = new System.Drawing.Point(174, 374);
+            this.Nextbutton.ForeColor = System.Drawing.Color.Red;
+            this.Nextbutton.Location = new System.Drawing.Point(187, 456);
             this.Nextbutton.Name = "Nextbutton";
             this.Nextbutton.Size = new System.Drawing.Size(238, 48);
             this.Nextbutton.TabIndex = 0;
             this.Nextbutton.Text = "Go To Menu";
-            this.Nextbutton.UseVisualStyleBackColor = true;
+            this.Nextbutton.UseVisualStyleBackColor = false;
             this.Nextbutton.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(130, 129);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(239, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Your small contribution can make a big difference";
             // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 516);
-            this.Controls.Add(this.label2);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(614, 516);
             this.Controls.Add(this.Nextbutton);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "Homepage";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button Nextbutton;
-        private System.Windows.Forms.Label label2;
     }
 }
 
