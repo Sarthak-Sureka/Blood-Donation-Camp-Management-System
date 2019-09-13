@@ -34,16 +34,8 @@ namespace BloodDonationCampWindowsForms
         {
             int i = int.Parse(IdtextBox1.Text);
             WebApiHelper helper = new WebApiHelper(ConfigurationManager.AppSettings["uri"]);
-            try
-            {
-                helper.Delete(i);
-                MessageBox.Show($"Donor Id: {i} successfully deleted");
-            }
-            catch(Exception)
-            {
-                MessageBox.Show($"Donor Id: {i} does not exist");
-            }
             IdtextBox1.Text = "";
+            helper.Delete(i);
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BloodDonationCampWindowsForms
 {
@@ -17,10 +18,17 @@ namespace BloodDonationCampWindowsForms
             this.url = url;
         }
 
-        public string Delete(int Id)
+        public void Delete(int Id)
         {
             HttpResponseMessage response = client.DeleteAsync(url + Id).Result;
-            return response.Content.ToString();
+            if(response.IsSuccessStatusCode)
+            {
+                MessageBox.Show("Successful");
+            }
+            else
+            {
+                MessageBox.Show("Error Code" + response.StatusCode + " : Message - " + response.ReasonPhrase);
+            }
         }
 
     }
