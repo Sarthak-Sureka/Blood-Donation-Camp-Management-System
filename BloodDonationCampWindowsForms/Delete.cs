@@ -23,5 +23,10 @@ namespace BloodDonationCampWindowsForms
             o.Show();
             this.Hide();
         }
+
+        private void Delete_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

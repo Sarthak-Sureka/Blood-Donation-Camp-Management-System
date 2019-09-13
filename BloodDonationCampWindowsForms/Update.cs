@@ -47,5 +47,10 @@ namespace BloodDonationCampWindowsForms
             BloodGrouptextBox.Text = " ";
             UnitCollectedtextBox.Text = " ";
         }
+
+        private void Savebutton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

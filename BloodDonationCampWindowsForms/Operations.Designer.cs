@@ -41,7 +41,7 @@
             // 
             this.Savebutton.BackColor = System.Drawing.Color.Transparent;
             this.Savebutton.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Savebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Savebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Savebutton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Savebutton.ForeColor = System.Drawing.Color.Black;
             this.Savebutton.Location = new System.Drawing.Point(208, 136);
@@ -55,7 +55,7 @@
             // Viewbutton
             // 
             this.Viewbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Viewbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Viewbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Viewbutton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Viewbutton.ForeColor = System.Drawing.Color.Black;
             this.Viewbutton.Location = new System.Drawing.Point(29, 245);
@@ -69,7 +69,7 @@
             // Updatebutton
             // 
             this.Updatebutton.BackColor = System.Drawing.Color.Transparent;
-            this.Updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Updatebutton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Updatebutton.ForeColor = System.Drawing.Color.Black;
             this.Updatebutton.Location = new System.Drawing.Point(389, 245);
@@ -83,7 +83,7 @@
             // Deletebutton
             // 
             this.Deletebutton.BackColor = System.Drawing.Color.Transparent;
-            this.Deletebutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Deletebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Deletebutton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Deletebutton.ForeColor = System.Drawing.Color.Black;
             this.Deletebutton.Location = new System.Drawing.Point(208, 340);
@@ -110,9 +110,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(43, 446);
             this.button1.Name = "button1";

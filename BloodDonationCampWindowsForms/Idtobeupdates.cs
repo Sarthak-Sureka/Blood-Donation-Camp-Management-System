@@ -35,5 +35,10 @@ namespace BloodDonationCampWindowsForms
             u.Show();
             this.Hide();
         }
+
+        private void Idtobeupdates_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

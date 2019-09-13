@@ -38,7 +38,7 @@
             this.Nextbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Nextbutton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nextbutton.ForeColor = System.Drawing.Color.Red;
-            this.Nextbutton.Location = new System.Drawing.Point(187, 456);
+            this.Nextbutton.Location = new System.Drawing.Point(187, 460);
             this.Nextbutton.Name = "Nextbutton";
             this.Nextbutton.Size = new System.Drawing.Size(238, 48);
             this.Nextbutton.TabIndex = 0;
@@ -51,7 +51,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(614, 516);
+            this.ClientSize = new System.Drawing.Size(629, 529);
             this.Controls.Add(this.Nextbutton);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "Homepage";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Delete));
             this.label1 = new System.Windows.Forms.Label();
             this.Deletebutton1 = new System.Windows.Forms.Button();
             this.IdtextBox1 = new System.Windows.Forms.TextBox();
@@ -38,6 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(30, 166);
             this.label1.Name = "label1";
@@ -47,36 +49,42 @@
             // 
             // Deletebutton1
             // 
-            this.Deletebutton1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deletebutton1.BackColor = System.Drawing.Color.Transparent;
+            this.Deletebutton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Deletebutton1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Deletebutton1.Location = new System.Drawing.Point(351, 284);
             this.Deletebutton1.Name = "Deletebutton1";
             this.Deletebutton1.Size = new System.Drawing.Size(109, 38);
             this.Deletebutton1.TabIndex = 1;
             this.Deletebutton1.Text = "Delete";
-            this.Deletebutton1.UseVisualStyleBackColor = true;
+            this.Deletebutton1.UseVisualStyleBackColor = false;
             // 
             // IdtextBox1
             // 
+            this.IdtextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.IdtextBox1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdtextBox1.Location = new System.Drawing.Point(215, 163);
+            this.IdtextBox1.Location = new System.Drawing.Point(188, 163);
             this.IdtextBox1.Name = "IdtextBox1";
-            this.IdtextBox1.Size = new System.Drawing.Size(271, 32);
+            this.IdtextBox1.Size = new System.Drawing.Size(298, 32);
             this.IdtextBox1.TabIndex = 2;
             // 
             // Cancelbutton2
             // 
-            this.Cancelbutton2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancelbutton2.BackColor = System.Drawing.Color.Transparent;
+            this.Cancelbutton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancelbutton2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cancelbutton2.Location = new System.Drawing.Point(63, 284);
             this.Cancelbutton2.Name = "Cancelbutton2";
             this.Cancelbutton2.Size = new System.Drawing.Size(109, 38);
             this.Cancelbutton2.TabIndex = 3;
             this.Cancelbutton2.Text = "Back";
-            this.Cancelbutton2.UseVisualStyleBackColor = true;
+            this.Cancelbutton2.UseVisualStyleBackColor = false;
             this.Cancelbutton2.Click += new System.EventHandler(this.Cancelbutton2_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(115, 55);
             this.label2.Name = "label2";
@@ -88,6 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(533, 393);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Cancelbutton2);
@@ -96,6 +105,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Delete";
             this.Text = "Delete";
+            this.Load += new System.EventHandler(this.Delete_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

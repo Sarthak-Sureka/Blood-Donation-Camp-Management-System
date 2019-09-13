@@ -21,24 +21,28 @@ namespace BloodDonationCampWindowsForms
         {
             Save s = new Save();
             s.Show();
+            this.Hide();
         }
 
         private void Viewbutton_Click(object sender, EventArgs e)
         {
             View v = new View();
             v.Show();
+            this.Hide();
         }
 
         private void Updatebutton_Click(object sender, EventArgs e)
         {
             Update u = new Update();
             u.Show();
+            this.Hide();
         }
 
         private void Deletebutton_Click(object sender, EventArgs e)
         {
             Delete d = new Delete();
             d.Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)

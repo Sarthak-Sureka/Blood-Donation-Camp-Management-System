@@ -43,5 +43,9 @@ namespace BloodDonationCampWindowsForms
             this.Hide();
         }
 
+        private void Savebutton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
