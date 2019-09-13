@@ -21,28 +21,28 @@ namespace BloodDonationCampWindowsForms
         {
             Save s = new Save();
             s.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Viewbutton_Click(object sender, EventArgs e)
         {
             View v = new View();
             v.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Updatebutton_Click(object sender, EventArgs e)
         {
             Idtobeupdates u = new Idtobeupdates();
             u.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Deletebutton_Click(object sender, EventArgs e)
         {
             Delete d = new Delete();
             d.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace BloodDonationCampWindowsForms
         {
             Homepage hp = new Homepage();
             hp.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

@@ -49,6 +49,11 @@ namespace BloodDonation.DataAccess
             db.SaveChanges();
         }
 
+        public string SearchDonorDetails(int DonorId)
+        {
+            return db.DonorDetails.Where(c => c.DonorID == DonorId).ToString();
+        }
+
         public void UpdateDonorDetails(string jsondata)
         {
             DonorDetails data = JsonConvert.DeserializeObject<DonorDetails>(jsondata);

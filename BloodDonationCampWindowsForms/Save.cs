@@ -40,7 +40,7 @@ namespace BloodDonationCampWindowsForms
         {
             Operations o = new Operations();
             o.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Savebutton1_Click(object sender, EventArgs e)

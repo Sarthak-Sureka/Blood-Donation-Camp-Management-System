@@ -13,5 +13,6 @@ namespace BloodDonation.DataAccess
         string ReadDonorDetails();
         void DeleteDonorDetails(int DonorId);
         void UpdateDonorDetails(string data);
+        string SearchDonorDetails(int DonorId);
     }
 }

@@ -58,6 +58,7 @@
             this.Deletebutton1.TabIndex = 1;
             this.Deletebutton1.Text = "Delete";
             this.Deletebutton1.UseVisualStyleBackColor = false;
+            this.Deletebutton1.Click += new System.EventHandler(this.Deletebutton1_Click);
             // 
             // IdtextBox1
             // 

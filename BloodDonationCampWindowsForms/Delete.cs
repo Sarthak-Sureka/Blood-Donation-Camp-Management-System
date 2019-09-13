@@ -21,10 +21,15 @@ namespace BloodDonationCampWindowsForms
         {
             Operations o = new Operations();
             o.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Delete_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Deletebutton1_Click(object sender, EventArgs e)
         {
 
         }

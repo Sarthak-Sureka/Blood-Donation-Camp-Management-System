@@ -36,7 +36,7 @@ namespace BloodDonationCampWindowsForms
         {
             Idtobeupdates i = new Idtobeupdates();
             i.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Cancelbutton1_Click(object sender, EventArgs e)

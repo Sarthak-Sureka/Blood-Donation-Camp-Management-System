@@ -26,14 +26,14 @@ namespace BloodDonationCampWindowsForms
         {
             Operations o = new Operations();
             o.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Deletebutton1_Click(object sender, EventArgs e)
         {
             Update u = new Update();
             u.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Idtobeupdates_Load(object sender, EventArgs e)

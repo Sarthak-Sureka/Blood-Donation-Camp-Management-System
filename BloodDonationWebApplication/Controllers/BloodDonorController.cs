@@ -19,7 +19,7 @@ namespace BloodDonationWebApplication.Controllers
             return JsonConvert.DeserializeObject<List<DonorDetails>>(bdr.ReadDonorDetails());
         }
 
-        public void PostDetails(string jsondata)
+        public void PostAllDetails(string jsondata)
         {
             bdr.SaveDonorDetails(jsondata);
         }
@@ -29,9 +29,14 @@ namespace BloodDonationWebApplication.Controllers
             bdr.DeleteDonorDetails(Id);
         }
 
-        public void PutDetails(DonorDetails d)
+        public void PutDetails(string d)
         {
             bdr.UpdateDonorDetails(d);
+        }
+
+        public DonorDetails PostDetails(int Id)
+        {
+            return JsonConvert.DeserializeObject<DonorDetails>(bdr.SearchDonorDetails(Id));
         }
 
     }
