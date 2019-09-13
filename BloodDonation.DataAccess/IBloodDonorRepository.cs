@@ -9,10 +9,10 @@ namespace BloodDonation.DataAccess
 {
     public interface IBloodDonorRepository
     {
-        void SaveDonorDetails(string jsondata);
+        bool SaveDonorDetails(string jsondata);
         string ReadDonorDetails();
-        void DeleteDonorDetails(int DonorId);
-        void UpdateDonorDetails(string data);
+        bool DeleteDonorDetails(int DonorId);
+        bool UpdateDonorDetails(string data);
         string SearchDonorDetails(int DonorId);
     }
 }

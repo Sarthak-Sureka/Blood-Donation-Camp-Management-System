@@ -14,29 +14,44 @@ namespace BloodDonationWebApplication.Controllers
     {
         private BloodDonorRepository bdr = new BloodDonorRepository();
 
-        public List<DonorDetails> GetDetails()
+        public IHttpActionResult GetDetails()
         {
-            return JsonConvert.DeserializeObject<List<DonorDetails>>(bdr.ReadDonorDetails());
+            List<DonorDetails> data = JsonConvert.DeserializeObject<List<DonorDetails>>(bdr.ReadDonorDetails());
+            if (data == null)
+                return NotFound();
+            return Ok(data);
         }
 
-        public void PostAllDetails(string jsondata)
+        public IHttpActionResult PostAllDetails(string jsondata)
         {
-            bdr.SaveDonorDetails(jsondata);
+            var data = bdr.SaveDonorDetails(jsondata);
+            if (data == false)
+                return NotFound();
+            return Ok(data);
         }
 
-        public void DeleteDetails(int Id)
+        public IHttpActionResult DeleteDetails(int Id)
         {
-            bdr.DeleteDonorDetails(Id);
+            var result = bdr.DeleteDonorDetails(Id);
+            if (result == false)
+                return NotFound();
+            return Ok();
         }
 
-        public void PutDetails(string d)
+        public IHttpActionResult PutDetails(string d)
         {
-            bdr.UpdateDonorDetails(d);
+            var data = bdr.UpdateDonorDetails(d);
+            if (data == false)
+                return NotFound();
+            return Ok(data);
         }
 
-        public DonorDetails PostDetails(int Id)
+        public IHttpActionResult PostDetails(int Id)
         {
-            return JsonConvert.DeserializeObject<DonorDetails>(bdr.SearchDonorDetails(Id));
+            DonorDetails data = JsonConvert.DeserializeObject<DonorDetails>(bdr.SearchDonorDetails(Id));
+            if (data == null)
+                return NotFound();
+            return Ok(data);
         }
 
     }

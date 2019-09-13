@@ -33,8 +33,7 @@ namespace BloodDonationCampWindowsForms
         private void Deletebutton1_Click(object sender, EventArgs e)
         {
             int i = int.Parse(IdtextBox1.Text);
-            WebApiHelper helper = new WebApiHelper(ConfigurationManager.AppSettings["uri"]+"/");
-            IdtextBox1.Text = "";
+            WebApiHelper helper = new WebApiHelper(ConfigurationManager.AppSettings["uri"]);
             try
             {
                 helper.Delete(i);
@@ -44,6 +43,7 @@ namespace BloodDonationCampWindowsForms
             {
                 MessageBox.Show($"Donor Id: {i} does not exist");
             }
+            IdtextBox1.Text = "";
         }
     }
 }

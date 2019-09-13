@@ -15,14 +15,14 @@ namespace BloodDonation.DataAccess
     {
         private BloodDonationDbContext db = new BloodDonationDbContext();
 
-        public void DeleteDonorDetails(int DonorId)
+        public bool DeleteDonorDetails(int DonorId)
         {
             var item = db.DonorDetails.SingleOrDefault(c => c.DonorID == DonorId);
-            if(item != null)
-            {
-                db.DonorDetails.Remove(item);
-                db.SaveChanges();
-            }
+            if (item == null)
+                return false;
+            db.DonorDetails.Remove(item);
+            db.SaveChanges();
+            return true;
         }
 
         public string ReadDonorDetails()
@@ -32,9 +32,11 @@ namespace BloodDonation.DataAccess
             return JsonString;
         }
 
-        public void SaveDonorDetails(string jsondata)
+        public bool SaveDonorDetails(string jsondata)
         {
             DonorDetails data = JsonConvert.DeserializeObject<DonorDetails>(jsondata);
+            if (data == null)
+                return false;
             //foreach (var item in data)
             //{
             //    DonorDetails dd = new DonorDetails();
@@ -47,6 +49,7 @@ namespace BloodDonation.DataAccess
             //}
             db.DonorDetails.Add(data);
             db.SaveChanges();
+            return true;
         }
 
         public string SearchDonorDetails(int DonorId)
@@ -54,11 +57,14 @@ namespace BloodDonation.DataAccess
             return db.DonorDetails.SingleOrDefault(c => c.DonorID == DonorId).ToString();
         }
 
-        public void UpdateDonorDetails(string jsondata)
+        public bool UpdateDonorDetails(string jsondata)
         {
             DonorDetails data = JsonConvert.DeserializeObject<DonorDetails>(jsondata);
+            if (data == null)
+                return false;
             db.DonorDetails.AddOrUpdate(data);
             db.SaveChanges();
+            return true;
             //var item = db.DonorDetails.Where(c => c.DonorID == dd.DonorID);
             //foreach (var i in item)
             //{
