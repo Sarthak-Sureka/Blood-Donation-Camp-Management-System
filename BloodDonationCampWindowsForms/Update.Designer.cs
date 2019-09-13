@@ -28,158 +28,198 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.IDtextBox4 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Cancelbutton4 = new System.Windows.Forms.Button();
-            this.Updatebutton4 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.UnitCollectedtextBox = new System.Windows.Forms.TextBox();
+            this.BloodGrouptextBox = new System.Windows.Forms.TextBox();
+            this.WeighttextBox = new System.Windows.Forms.TextBox();
+            this.DobtextBox = new System.Windows.Forms.TextBox();
+            this.NametextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.NametextBox4 = new System.Windows.Forms.TextBox();
-            this.DobtextBox4 = new System.Windows.Forms.TextBox();
-            this.WeighttextBox4 = new System.Windows.Forms.TextBox();
-            this.BloodtextBox4 = new System.Windows.Forms.TextBox();
-            this.UnitCollectedtextBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Cancelbutton1 = new System.Windows.Forms.Button();
+            this.Savebutton1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // IDtextBox4
+            // button1
             // 
-            this.IDtextBox4.Location = new System.Drawing.Point(115, 35);
-            this.IDtextBox4.Name = "IDtextBox4";
-            this.IDtextBox4.Size = new System.Drawing.Size(100, 20);
-            this.IDtextBox4.TabIndex = 0;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(68, 434);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 36);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // label1
+            // label9
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Id";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(439, 249);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(33, 25);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "kg";
             // 
-            // Cancelbutton4
+            // label8
             // 
-            this.Cancelbutton4.Location = new System.Drawing.Point(595, 382);
-            this.Cancelbutton4.Name = "Cancelbutton4";
-            this.Cancelbutton4.Size = new System.Drawing.Size(75, 23);
-            this.Cancelbutton4.TabIndex = 2;
-            this.Cancelbutton4.Text = "Cancel";
-            this.Cancelbutton4.UseVisualStyleBackColor = true;
-            this.Cancelbutton4.Click += new System.EventHandler(this.button1_Click);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(120, 44);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(323, 40);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Update Donor Details";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // Updatebutton4
+            // label7
             // 
-            this.Updatebutton4.Location = new System.Drawing.Point(455, 382);
-            this.Updatebutton4.Name = "Updatebutton4";
-            this.Updatebutton4.Size = new System.Drawing.Size(75, 23);
-            this.Updatebutton4.TabIndex = 3;
-            this.Updatebutton4.Text = "Update";
-            this.Updatebutton4.UseVisualStyleBackColor = true;
-            this.Updatebutton4.Click += new System.EventHandler(this.Updatebutton4_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(439, 368);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 25);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "ml";
             // 
-            // label2
+            // UnitCollectedtextBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Name";
+            this.UnitCollectedtextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UnitCollectedtextBox.Location = new System.Drawing.Point(236, 365);
+            this.UnitCollectedtextBox.Name = "UnitCollectedtextBox";
+            this.UnitCollectedtextBox.Size = new System.Drawing.Size(197, 32);
+            this.UnitCollectedtextBox.TabIndex = 29;
             // 
-            // label3
+            // BloodGrouptextBox
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Dob";
+            this.BloodGrouptextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodGrouptextBox.Location = new System.Drawing.Point(235, 305);
+            this.BloodGrouptextBox.Name = "BloodGrouptextBox";
+            this.BloodGrouptextBox.Size = new System.Drawing.Size(237, 32);
+            this.BloodGrouptextBox.TabIndex = 28;
             // 
-            // label4
+            // WeighttextBox
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 229);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Weight";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.WeighttextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeighttextBox.Location = new System.Drawing.Point(236, 246);
+            this.WeighttextBox.Name = "WeighttextBox";
+            this.WeighttextBox.Size = new System.Drawing.Size(197, 32);
+            this.WeighttextBox.TabIndex = 27;
             // 
-            // label5
+            // DobtextBox
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 302);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Blood group";
+            this.DobtextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DobtextBox.Location = new System.Drawing.Point(235, 188);
+            this.DobtextBox.Name = "DobtextBox";
+            this.DobtextBox.Size = new System.Drawing.Size(237, 32);
+            this.DobtextBox.TabIndex = 26;
+            // 
+            // NametextBox
+            // 
+            this.NametextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NametextBox.Location = new System.Drawing.Point(235, 130);
+            this.NametextBox.Name = "NametextBox";
+            this.NametextBox.Size = new System.Drawing.Size(237, 32);
+            this.NametextBox.TabIndex = 25;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 364);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(60, 372);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 13);
-            this.label6.TabIndex = 8;
+            this.label6.Size = new System.Drawing.Size(140, 25);
+            this.label6.TabIndex = 24;
             this.label6.Text = "Unit Collected";
             // 
-            // NametextBox4
+            // label5
             // 
-            this.NametextBox4.Location = new System.Drawing.Point(115, 100);
-            this.NametextBox4.Name = "NametextBox4";
-            this.NametextBox4.Size = new System.Drawing.Size(100, 20);
-            this.NametextBox4.TabIndex = 9;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(59, 308);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(127, 25);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Blood Group";
             // 
-            // DobtextBox4
+            // label4
             // 
-            this.DobtextBox4.Location = new System.Drawing.Point(115, 167);
-            this.DobtextBox4.Name = "DobtextBox4";
-            this.DobtextBox4.Size = new System.Drawing.Size(100, 20);
-            this.DobtextBox4.TabIndex = 10;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(83, 249);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 25);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Weight";
             // 
-            // WeighttextBox4
+            // label3
             // 
-            this.WeighttextBox4.Location = new System.Drawing.Point(115, 229);
-            this.WeighttextBox4.Name = "WeighttextBox4";
-            this.WeighttextBox4.Size = new System.Drawing.Size(100, 20);
-            this.WeighttextBox4.TabIndex = 11;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(59, 191);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 25);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Date of Birth";
             // 
-            // BloodtextBox4
+            // label2
             // 
-            this.BloodtextBox4.Location = new System.Drawing.Point(115, 299);
-            this.BloodtextBox4.Name = "BloodtextBox4";
-            this.BloodtextBox4.Size = new System.Drawing.Size(100, 20);
-            this.BloodtextBox4.TabIndex = 12;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(59, 133);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Donor Name";
             // 
-            // UnitCollectedtextBox4
+            // Cancelbutton1
             // 
-            this.UnitCollectedtextBox4.Location = new System.Drawing.Point(115, 364);
-            this.UnitCollectedtextBox4.Name = "UnitCollectedtextBox4";
-            this.UnitCollectedtextBox4.Size = new System.Drawing.Size(100, 20);
-            this.UnitCollectedtextBox4.TabIndex = 13;
+            this.Cancelbutton1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancelbutton1.Location = new System.Drawing.Point(253, 434);
+            this.Cancelbutton1.Name = "Cancelbutton1";
+            this.Cancelbutton1.Size = new System.Drawing.Size(90, 36);
+            this.Cancelbutton1.TabIndex = 19;
+            this.Cancelbutton1.Text = "Cancel";
+            this.Cancelbutton1.UseVisualStyleBackColor = true;
+            this.Cancelbutton1.Click += new System.EventHandler(this.Cancelbutton1_Click);
+            // 
+            // Savebutton1
+            // 
+            this.Savebutton1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Savebutton1.Location = new System.Drawing.Point(367, 434);
+            this.Savebutton1.Name = "Savebutton1";
+            this.Savebutton1.Size = new System.Drawing.Size(106, 36);
+            this.Savebutton1.TabIndex = 18;
+            this.Savebutton1.Text = "Update";
+            this.Savebutton1.UseVisualStyleBackColor = true;
             // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.UnitCollectedtextBox4);
-            this.Controls.Add(this.BloodtextBox4);
-            this.Controls.Add(this.WeighttextBox4);
-            this.Controls.Add(this.DobtextBox4);
-            this.Controls.Add(this.NametextBox4);
+            this.ClientSize = new System.Drawing.Size(539, 516);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.UnitCollectedtextBox);
+            this.Controls.Add(this.BloodGrouptextBox);
+            this.Controls.Add(this.WeighttextBox);
+            this.Controls.Add(this.DobtextBox);
+            this.Controls.Add(this.NametextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Updatebutton4);
-            this.Controls.Add(this.Cancelbutton4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.IDtextBox4);
+            this.Controls.Add(this.Cancelbutton1);
+            this.Controls.Add(this.Savebutton1);
             this.Name = "Update";
             this.Text = "Update";
             this.ResumeLayout(false);
@@ -189,19 +229,21 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox IDtextBox4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Cancelbutton4;
-        private System.Windows.Forms.Button Updatebutton4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox UnitCollectedtextBox;
+        private System.Windows.Forms.TextBox BloodGrouptextBox;
+        private System.Windows.Forms.TextBox WeighttextBox;
+        private System.Windows.Forms.TextBox DobtextBox;
+        private System.Windows.Forms.TextBox NametextBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox NametextBox4;
-        private System.Windows.Forms.TextBox DobtextBox4;
-        private System.Windows.Forms.TextBox WeighttextBox4;
-        private System.Windows.Forms.TextBox BloodtextBox4;
-        private System.Windows.Forms.TextBox UnitCollectedtextBox4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button Cancelbutton1;
+        private System.Windows.Forms.Button Savebutton1;
     }
 }

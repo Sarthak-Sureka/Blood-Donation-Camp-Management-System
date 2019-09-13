@@ -40,5 +40,16 @@ namespace BloodDonationCampWindowsForms
             Delete d = new Delete();
             d.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Homepage hp = new Homepage();
+            this.Hide();
+        }
     }
 }

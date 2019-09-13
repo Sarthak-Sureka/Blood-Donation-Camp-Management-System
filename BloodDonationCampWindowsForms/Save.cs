@@ -19,12 +19,34 @@ namespace BloodDonationCampWindowsForms
 
         private void Cancelbutton1_Click(object sender, EventArgs e)
         {
-            IdtextBox.Text = " ";
             NametextBox.Text = " ";
             DobtextBox.Text = " ";
             WeighttextBox.Text = " ";
             BloodGrouptextBox.Text = " ";
             UnitCollectedtextBox.Text = " ";
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Save_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Operations o = new Operations();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Operations o = new Operations();
+            this.Hide();
+        }
+
     }
 }

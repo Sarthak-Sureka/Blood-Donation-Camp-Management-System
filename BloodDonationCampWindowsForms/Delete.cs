@@ -19,7 +19,8 @@ namespace BloodDonationCampWindowsForms
 
         private void Cancelbutton2_Click(object sender, EventArgs e)
         {
-            IdtextBox1.Text = " ";
+            Operations o = new Operations();
+            this.Hide();
         }
     }
 }

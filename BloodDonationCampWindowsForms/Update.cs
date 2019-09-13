@@ -17,16 +17,6 @@ namespace BloodDonationCampWindowsForms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            IDtextBox4.Text = " ";
-            NametextBox4.Text = " ";
-            DobtextBox4.Text = " ";
-            WeighttextBox4.Text = " ";
-            BloodtextBox4.Text = " ";
-            UnitCollectedtextBox4.Text = " ";
-        }
-
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -35,6 +25,26 @@ namespace BloodDonationCampWindowsForms
         private void Updatebutton4_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Operations o = new Operations();
+            this.Hide();
+        }
+
+        private void Cancelbutton1_Click(object sender, EventArgs e)
+        {
+            NametextBox.Text = " ";
+            DobtextBox.Text = " ";
+            WeighttextBox.Text = " ";
+            BloodGrouptextBox.Text = " ";
+            UnitCollectedtextBox.Text = " ";
         }
     }
 }
