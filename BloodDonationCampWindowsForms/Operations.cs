@@ -33,7 +33,7 @@ namespace BloodDonationCampWindowsForms
 
         private void Updatebutton_Click(object sender, EventArgs e)
         {
-            Update u = new Update();
+            Idtobeupdates u = new Idtobeupdates();
             u.Show();
             this.Hide();
         }

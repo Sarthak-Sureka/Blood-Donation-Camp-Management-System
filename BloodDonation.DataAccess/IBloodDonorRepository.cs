@@ -12,6 +12,6 @@ namespace BloodDonation.DataAccess
         void SaveDonorDetails(string jsondata);
         string ReadDonorDetails();
         void DeleteDonorDetails(int DonorId);
-        void UpdateDonorDetails(DonorDetails dd);
+        void UpdateDonorDetails(string data);
     }
 }

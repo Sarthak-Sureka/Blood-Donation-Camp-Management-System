@@ -181,10 +181,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(441, 359);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 25);
+            this.label7.Size = new System.Drawing.Size(36, 25);
             this.label7.TabIndex = 14;
             this.label7.Text = "ml";
             // 
@@ -204,10 +204,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(441, 240);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(33, 25);
+            this.label9.Size = new System.Drawing.Size(35, 25);
             this.label9.TabIndex = 16;
             this.label9.Text = "kg";
             // 
