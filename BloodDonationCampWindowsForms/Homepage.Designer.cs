@@ -55,7 +55,7 @@
             this.Controls.Add(this.Nextbutton);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "Homepage";
-            this.Text = "Form1";
+            this.Text = "Blood Donation Camp";
             this.ResumeLayout(false);
 
         }

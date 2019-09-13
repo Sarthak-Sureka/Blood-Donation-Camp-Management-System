@@ -36,15 +36,10 @@ namespace BloodDonationCampWindowsForms
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Operations o = new Operations();
-            this.Hide();
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             Operations o = new Operations();
+            o.Show();
             this.Hide();
         }
 

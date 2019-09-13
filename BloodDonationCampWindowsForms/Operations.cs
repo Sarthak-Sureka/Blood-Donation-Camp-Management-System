@@ -49,6 +49,7 @@ namespace BloodDonationCampWindowsForms
         private void button1_Click(object sender, EventArgs e)
         {
             Homepage hp = new Homepage();
+            hp.Show();
             this.Hide();
         }
     }

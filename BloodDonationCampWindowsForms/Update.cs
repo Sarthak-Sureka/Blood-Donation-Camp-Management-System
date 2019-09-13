@@ -34,7 +34,8 @@ namespace BloodDonationCampWindowsForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Operations o = new Operations();
+            Idtobeupdates i = new Idtobeupdates();
+            i.Show();
             this.Hide();
         }
 

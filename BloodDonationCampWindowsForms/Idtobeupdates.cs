@@ -10,17 +10,29 @@ using System.Windows.Forms;
 
 namespace BloodDonationCampWindowsForms
 {
-    public partial class Delete : Form
+    public partial class Idtobeupdates : Form
     {
-        public Delete()
+        public Idtobeupdates()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Cancelbutton2_Click(object sender, EventArgs e)
         {
             Operations o = new Operations();
             o.Show();
+            this.Hide();
+        }
+
+        private void Deletebutton1_Click(object sender, EventArgs e)
+        {
+            Update u = new Update();
+            u.Show();
             this.Hide();
         }
     }

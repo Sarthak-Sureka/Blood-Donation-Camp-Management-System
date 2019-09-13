@@ -25,6 +25,7 @@ namespace BloodDonationCampWindowsForms
         private void button1_Click(object sender, EventArgs e)
         {
             Operations o = new Operations();
+            o.Show();
             this.Hide();
         }
     }
