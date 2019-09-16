@@ -18,7 +18,6 @@ namespace BloodDonation.Entities
         public int Weight { get; set; }
         [Required]
         public string BloodGroup { get; set; }
-        [Range(400,800)]
         public int UnitCollected { get; set; }
     }
 }

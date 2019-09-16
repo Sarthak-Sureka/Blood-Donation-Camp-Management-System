@@ -40,12 +40,14 @@
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.DobtextBox = new System.Windows.Forms.TextBox();
             this.WeighttextBox = new System.Windows.Forms.TextBox();
-            this.BloodGrouptextBox = new System.Windows.Forms.TextBox();
             this.UnitCollectedtextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.bloodDonationCampDataSet1 = new BloodDonationCampWindowsForms.BloodDonationCampDataSet();
+            this.BloodGrouptextBox = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.bloodDonationCampDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // Savebutton1
@@ -161,14 +163,6 @@
             this.WeighttextBox.Size = new System.Drawing.Size(197, 32);
             this.WeighttextBox.TabIndex = 11;
             // 
-            // BloodGrouptextBox
-            // 
-            this.BloodGrouptextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BloodGrouptextBox.Location = new System.Drawing.Point(237, 296);
-            this.BloodGrouptextBox.Name = "BloodGrouptextBox";
-            this.BloodGrouptextBox.Size = new System.Drawing.Size(237, 32);
-            this.BloodGrouptextBox.TabIndex = 12;
-            // 
             // UnitCollectedtextBox
             // 
             this.UnitCollectedtextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,18 +218,46 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // bloodDonationCampDataSet1
+            // 
+            this.bloodDonationCampDataSet1.DataSetName = "BloodDonationCampDataSet";
+            this.bloodDonationCampDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // BloodGrouptextBox
+            // 
+            this.BloodGrouptextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodGrouptextBox.FormattingEnabled = true;
+            this.BloodGrouptextBox.Items.AddRange(new object[] {
+            "AB",
+            "AB+",
+            "AB-",
+            "O",
+            "O+",
+            "O-",
+            "A",
+            "A+",
+            "A-",
+            "B",
+            "B+",
+            "B-"});
+            this.BloodGrouptextBox.Location = new System.Drawing.Point(238, 299);
+            this.BloodGrouptextBox.Name = "BloodGrouptextBox";
+            this.BloodGrouptextBox.Size = new System.Drawing.Size(236, 31);
+            this.BloodGrouptextBox.TabIndex = 18;
+            this.BloodGrouptextBox.SelectedIndexChanged += new System.EventHandler(this.BloodGrouptextBox_SelectedIndexChanged);
+            // 
             // Save
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(539, 516);
+            this.Controls.Add(this.BloodGrouptextBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.UnitCollectedtextBox);
-            this.Controls.Add(this.BloodGrouptextBox);
             this.Controls.Add(this.WeighttextBox);
             this.Controls.Add(this.DobtextBox);
             this.Controls.Add(this.NametextBox);
@@ -250,6 +272,7 @@
             this.Name = "Save";
             this.Text = "Save";
             this.Load += new System.EventHandler(this.Save_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bloodDonationCampDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,11 +291,12 @@
         private System.Windows.Forms.TextBox NametextBox;
         private System.Windows.Forms.TextBox DobtextBox;
         private System.Windows.Forms.TextBox WeighttextBox;
-        private System.Windows.Forms.TextBox BloodGrouptextBox;
         private System.Windows.Forms.TextBox UnitCollectedtextBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
+        private BloodDonationCampDataSet bloodDonationCampDataSet1;
+        private System.Windows.Forms.ComboBox BloodGrouptextBox;
     }
 }

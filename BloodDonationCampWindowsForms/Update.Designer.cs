@@ -34,7 +34,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.UnitCollectedtextBox = new System.Windows.Forms.TextBox();
-            this.BloodGrouptextBox = new System.Windows.Forms.TextBox();
             this.WeighttextBox = new System.Windows.Forms.TextBox();
             this.DobtextBox = new System.Windows.Forms.TextBox();
             this.NametextBox = new System.Windows.Forms.TextBox();
@@ -48,6 +47,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.BloodGrouptextBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -104,14 +104,6 @@
             this.UnitCollectedtextBox.Name = "UnitCollectedtextBox";
             this.UnitCollectedtextBox.Size = new System.Drawing.Size(197, 32);
             this.UnitCollectedtextBox.TabIndex = 29;
-            // 
-            // BloodGrouptextBox
-            // 
-            this.BloodGrouptextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BloodGrouptextBox.Location = new System.Drawing.Point(232, 333);
-            this.BloodGrouptextBox.Name = "BloodGrouptextBox";
-            this.BloodGrouptextBox.Size = new System.Drawing.Size(237, 32);
-            this.BloodGrouptextBox.TabIndex = 28;
             // 
             // WeighttextBox
             // 
@@ -251,12 +243,35 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // BloodGrouptextBox
+            // 
+            this.BloodGrouptextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodGrouptextBox.FormattingEnabled = true;
+            this.BloodGrouptextBox.Items.AddRange(new object[] {
+            "AB",
+            "AB+",
+            "AB-",
+            "O",
+            "O+",
+            "O-",
+            "A",
+            "A+",
+            "A-",
+            "B",
+            "B+",
+            "B-"});
+            this.BloodGrouptextBox.Location = new System.Drawing.Point(233, 333);
+            this.BloodGrouptextBox.Name = "BloodGrouptextBox";
+            this.BloodGrouptextBox.Size = new System.Drawing.Size(236, 31);
+            this.BloodGrouptextBox.TabIndex = 37;
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(539, 516);
+            this.Controls.Add(this.BloodGrouptextBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -265,7 +280,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.UnitCollectedtextBox);
-            this.Controls.Add(this.BloodGrouptextBox);
             this.Controls.Add(this.WeighttextBox);
             this.Controls.Add(this.DobtextBox);
             this.Controls.Add(this.NametextBox);
@@ -290,7 +304,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox UnitCollectedtextBox;
-        private System.Windows.Forms.TextBox BloodGrouptextBox;
         private System.Windows.Forms.TextBox WeighttextBox;
         private System.Windows.Forms.TextBox DobtextBox;
         private System.Windows.Forms.TextBox NametextBox;
@@ -304,5 +317,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox BloodGrouptextBox;
     }
 }
