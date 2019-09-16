@@ -14,7 +14,7 @@ namespace BloodDonationWebApplication.Controllers
     {
         private BloodDonorRepository bdr = new BloodDonorRepository();
 
-        public IHttpActionResult GetDetails()
+        public IHttpActionResult GetAllDetails()
         {
             List<DonorDetails> data = JsonConvert.DeserializeObject<List<DonorDetails>>(bdr.ReadDonorDetails());
             if (data == null)
@@ -22,7 +22,7 @@ namespace BloodDonationWebApplication.Controllers
             return Ok(data);
         }
 
-        public IHttpActionResult PostAllDetails(string jsondata)
+        public IHttpActionResult PostDetails(string jsondata)
         {
             var data = bdr.SaveDonorDetails(jsondata);
             if (data == false)
@@ -38,17 +38,17 @@ namespace BloodDonationWebApplication.Controllers
             return Ok();
         }
 
-        public IHttpActionResult PutDetails(string d)
+        public IHttpActionResult PutDetails(string jsondata)
         {
-            var data = bdr.UpdateDonorDetails(d);
+            var data = bdr.UpdateDonorDetails(jsondata);
             if (data == false)
                 return NotFound();
             return Ok(data);
         }
 
-        public IHttpActionResult PostDetails(int Id)
+        public IHttpActionResult GetDetails(int Id)
         {
-            DonorDetails data = JsonConvert.DeserializeObject<DonorDetails>(bdr.SearchDonorDetails(Id));
+            DonorDetails data = bdr.SearchDonorDetails(Id);
             if (data == null)
                 return NotFound();
             return Ok(data);

@@ -52,9 +52,9 @@ namespace BloodDonation.DataAccess
             return true;
         }
 
-        public string SearchDonorDetails(int DonorId)
+        public DonorDetails SearchDonorDetails(int DonorId)
         {
-            return db.DonorDetails.SingleOrDefault(c => c.DonorID == DonorId).ToString();
+            return db.DonorDetails.Where(c => c.DonorID == DonorId).First();
         }
 
         public bool UpdateDonorDetails(string jsondata)
@@ -66,6 +66,8 @@ namespace BloodDonation.DataAccess
             db.SaveChanges();
             return true;
             //var item = db.DonorDetails.Where(c => c.DonorID == dd.DonorID);
+            //if (item == null)
+            //    return false;
             //foreach (var i in item)
             //{
             //    i.Name = dd.Name;
@@ -75,6 +77,7 @@ namespace BloodDonation.DataAccess
             //    i.UnitCollected = dd.UnitCollected;
             //}
             //db.SaveChanges();
+            //return true;
         }
     }
 }

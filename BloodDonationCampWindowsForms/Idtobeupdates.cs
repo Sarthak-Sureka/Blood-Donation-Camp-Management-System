@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BloodDonation.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +32,10 @@ namespace BloodDonationCampWindowsForms
 
         private void Deletebutton1_Click(object sender, EventArgs e)
         {
+            WebApiHelper helper = new WebApiHelper();
+            DonorDetails dd = helper.Search(int.Parse(IdtextBox1.Text));
             Update u = new Update();
+            //dd.Name=
             u.Show();
             this.Close();
         }

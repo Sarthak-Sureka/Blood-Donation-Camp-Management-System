@@ -45,7 +45,9 @@ namespace BloodDonationCampWindowsForms
 
         private void Savebutton1_Click(object sender, EventArgs e)
         {
-
+            string data = "{'Name':'" + NametextBox.Text + "','DOB':'" + Convert.ToDateTime(DobtextBox.Text) + "','Weight': " + WeighttextBox.Text + ",'BloodGroup':'" + BloodGrouptextBox.Text.ToString() + "','UnitCollected': " + UnitCollectedtextBox.Text + "}";
+            WebApiHelper helper = new WebApiHelper();
+            helper.Post(data);
         }
     }
 }
