@@ -20,7 +20,7 @@ namespace BloodDonationCampWindowsForms
         private void Cancelbutton1_Click(object sender, EventArgs e)
         {
             NametextBox.Text = " ";
-            DobtextBox.Text = " ";
+            //DobtextBox.Text = " ";
             WeighttextBox.Text = " ";
             BloodGrouptextBox.Text = " ";
             UnitCollectedtextBox.Text = " ";
@@ -45,7 +45,28 @@ namespace BloodDonationCampWindowsForms
 
         private void Savebutton1_Click(object sender, EventArgs e)
         {
-            string data = "{'Name':'" + NametextBox.Text + "','DOB':'" + Convert.ToDateTime(DobtextBox.Text) + "','Weight': " + WeighttextBox.Text + ",'BloodGroup':'" + BloodGrouptextBox.Text + "','UnitCollected': " + UnitCollectedtextBox.Text + "}";
+            string bg = string.Empty;
+            if(BloodGrouptextBox.Text == "AB+")
+            {
+                bg = "AB%2B";
+            }
+            else if(BloodGrouptextBox.Text == "O+")
+            {
+                bg = "O%2B";
+            }
+            else if (BloodGrouptextBox.Text == "A+")
+            {
+                bg = "A%2B";
+            }
+            else if (BloodGrouptextBox.Text == "B+")
+            {
+                bg = "B%2B";
+            }
+            else
+            {
+                bg = BloodGrouptextBox.Text;
+            }
+            string data = "{'Name':'" + NametextBox.Text + "','DOB':'" + Convert.ToDateTime(dateTimePicker1.Value.Date) + "','Weight': " + WeighttextBox.Text + ",'BloodGroup':'" + bg + "','UnitCollected': " + UnitCollectedtextBox.Text + "}";
             WebApiHelper helper = new WebApiHelper();
             helper.Post(data);
         }
@@ -53,6 +74,11 @@ namespace BloodDonationCampWindowsForms
         private void BloodGrouptextBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

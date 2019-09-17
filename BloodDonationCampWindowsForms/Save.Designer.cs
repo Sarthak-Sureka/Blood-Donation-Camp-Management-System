@@ -38,7 +38,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
-            this.DobtextBox = new System.Windows.Forms.TextBox();
             this.WeighttextBox = new System.Windows.Forms.TextBox();
             this.UnitCollectedtextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.bloodDonationCampDataSet1 = new BloodDonationCampWindowsForms.BloodDonationCampDataSet();
             this.BloodGrouptextBox = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.bloodDonationCampDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,6 +105,7 @@
             this.label3.Size = new System.Drawing.Size(127, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Date of Birth";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -146,14 +147,6 @@
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(237, 32);
             this.NametextBox.TabIndex = 9;
-            // 
-            // DobtextBox
-            // 
-            this.DobtextBox.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DobtextBox.Location = new System.Drawing.Point(237, 179);
-            this.DobtextBox.Name = "DobtextBox";
-            this.DobtextBox.Size = new System.Drawing.Size(237, 32);
-            this.DobtextBox.TabIndex = 10;
             // 
             // WeighttextBox
             // 
@@ -246,12 +239,23 @@
             this.BloodGrouptextBox.TabIndex = 18;
             this.BloodGrouptextBox.SelectedIndexChanged += new System.EventHandler(this.BloodGrouptextBox_SelectedIndexChanged);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "MM-dd-yyyy";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(237, 182);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(237, 32);
+            this.dateTimePicker1.TabIndex = 19;
+            // 
             // Save
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(539, 516);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.BloodGrouptextBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
@@ -259,7 +263,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.UnitCollectedtextBox);
             this.Controls.Add(this.WeighttextBox);
-            this.Controls.Add(this.DobtextBox);
             this.Controls.Add(this.NametextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -289,7 +292,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox NametextBox;
-        private System.Windows.Forms.TextBox DobtextBox;
         private System.Windows.Forms.TextBox WeighttextBox;
         private System.Windows.Forms.TextBox UnitCollectedtextBox;
         private System.Windows.Forms.Label label7;
@@ -298,5 +300,6 @@
         private System.Windows.Forms.Button button1;
         private BloodDonationCampDataSet bloodDonationCampDataSet1;
         private System.Windows.Forms.ComboBox BloodGrouptextBox;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

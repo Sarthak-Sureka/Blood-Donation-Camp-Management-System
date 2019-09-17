@@ -45,7 +45,7 @@ namespace BloodDonationCampWindowsForms
         {
             textBox1.Text = " ";
             NametextBox.Text = " ";
-            DobtextBox.Text = " ";
+            dateTimePicker1.Text = " ";
             WeighttextBox.Text = " ";
             BloodGrouptextBox.Text = " ";
             UnitCollectedtextBox.Text = " ";
@@ -54,13 +54,34 @@ namespace BloodDonationCampWindowsForms
         private void Savebutton1_Click(object sender, EventArgs e)
         {
             //var data ="{'DonorID': " + int.Parse(textBox1.Text)+",'Name': '"+NametextBox.Text+"','DOB': '"+Convert.ToDateTime(DobtextBox.Text)+",'Weight': "+int.Parse(WeighttextBox.Text)+",'BloodGroup': '"+BloodGrouptextBox.Text+"','UnitCollected': "+int.Parse(UnitCollectedtextBox.Text)+"}";
+            string bg = string.Empty;
+            if (BloodGrouptextBox.Text == "AB+")
+            {
+                bg = "AB%2B";
+            }
+            else if (BloodGrouptextBox.Text == "O+")
+            {
+                bg = "O%2B";
+            }
+            else if (BloodGrouptextBox.Text == "A+")
+            {
+                bg = "A%2B";
+            }
+            else if (BloodGrouptextBox.Text == "B+")
+            {
+                bg = "B%2B";
+            }
+            else
+            {
+                bg = BloodGrouptextBox.Text;
+            }
             DonorDetails d = new DonorDetails
             {
                 DonorID = int.Parse(textBox1.Text),
                 Name = NametextBox.Text,
-                DOB = Convert.ToDateTime(DobtextBox.Text),
+                DOB = Convert.ToDateTime(dateTimePicker1.Value.Date),
                 Weight = int.Parse(WeighttextBox.Text),
-                BloodGroup = BloodGrouptextBox.Text.ToString(),
+                BloodGroup = bg,
                 UnitCollected = int.Parse(UnitCollectedtextBox.Text)
             };
             string data = JsonConvert.SerializeObject(d);
@@ -79,10 +100,15 @@ namespace BloodDonationCampWindowsForms
             WebApiHelper helper = new WebApiHelper();
             DonorDetails dd = helper.Search(i);
             NametextBox.Text = dd.Name;
-            DobtextBox.Text = dd.DOB.ToString();
+            dateTimePicker1.Text = dd.DOB.ToString();
             WeighttextBox.Text = dd.Weight.ToString();
             BloodGrouptextBox.Text = dd.BloodGroup;
             UnitCollectedtextBox.Text = dd.UnitCollected.ToString();
+        }
+
+        private void BloodGrouptextBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
