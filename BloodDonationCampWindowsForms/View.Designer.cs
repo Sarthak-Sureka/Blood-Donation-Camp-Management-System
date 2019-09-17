@@ -33,18 +33,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bloodDonationCampDataSet = new BloodDonationCampWindowsForms.BloodDonationCampDataSet();
-            this.donorDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.donorDetailsTableAdapter = new BloodDonationCampWindowsForms.BloodDonationCampDataSetTableAdapters.DonorDetailsTableAdapter();
             this.donorIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.weightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitCollectedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bloodDonationCampDataSet = new BloodDonationCampWindowsForms.BloodDonationCampDataSet();
+            this.donorDetailsTableAdapter = new BloodDonationCampWindowsForms.BloodDonationCampDataSetTableAdapters.DonorDetailsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bloodDonationCampDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.donorDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bloodDonationCampDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,20 +89,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(514, 366);
             this.dataGridView1.TabIndex = 4;
             // 
-            // bloodDonationCampDataSet
-            // 
-            this.bloodDonationCampDataSet.DataSetName = "BloodDonationCampDataSet";
-            this.bloodDonationCampDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // donorDetailsBindingSource
-            // 
-            this.donorDetailsBindingSource.DataMember = "DonorDetails";
-            this.donorDetailsBindingSource.DataSource = this.bloodDonationCampDataSet;
-            // 
-            // donorDetailsTableAdapter
-            // 
-            this.donorDetailsTableAdapter.ClearBeforeFill = true;
-            // 
             // donorIDDataGridViewTextBoxColumn
             // 
             this.donorIDDataGridViewTextBoxColumn.DataPropertyName = "DonorID";
@@ -140,6 +126,20 @@
             this.unitCollectedDataGridViewTextBoxColumn.HeaderText = "UnitCollected";
             this.unitCollectedDataGridViewTextBoxColumn.Name = "unitCollectedDataGridViewTextBoxColumn";
             // 
+            // donorDetailsBindingSource
+            // 
+            this.donorDetailsBindingSource.DataMember = "DonorDetails";
+            this.donorDetailsBindingSource.DataSource = this.bloodDonationCampDataSet;
+            // 
+            // bloodDonationCampDataSet
+            // 
+            this.bloodDonationCampDataSet.DataSetName = "BloodDonationCampDataSet";
+            this.bloodDonationCampDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // donorDetailsTableAdapter
+            // 
+            this.donorDetailsTableAdapter.ClearBeforeFill = true;
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,12 +149,13 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "View";
             this.Text = "View";
             this.Load += new System.EventHandler(this.View_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bloodDonationCampDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.donorDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bloodDonationCampDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

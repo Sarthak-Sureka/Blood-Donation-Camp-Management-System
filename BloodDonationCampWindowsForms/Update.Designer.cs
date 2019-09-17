@@ -293,6 +293,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Cancelbutton1);
             this.Controls.Add(this.Savebutton1);
+            this.MaximizeBox = false;
             this.Name = "Update";
             this.Text = "Update";
             this.ResumeLayout(false);
