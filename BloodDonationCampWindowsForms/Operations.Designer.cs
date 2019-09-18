@@ -134,6 +134,7 @@
             this.Controls.Add(this.Updatebutton);
             this.Controls.Add(this.Viewbutton);
             this.Controls.Add(this.Savebutton);
+            this.MaximizeBox = false;
             this.Name = "Operations";
             this.Text = "Operations";
             this.ResumeLayout(false);

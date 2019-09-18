@@ -54,6 +54,7 @@
             this.ClientSize = new System.Drawing.Size(629, 529);
             this.Controls.Add(this.Nextbutton);
             this.ForeColor = System.Drawing.Color.White;
+            this.MaximizeBox = false;
             this.Name = "Homepage";
             this.Text = "Blood Donation Camp";
             this.ResumeLayout(false);

@@ -272,6 +272,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Cancelbutton1);
             this.Controls.Add(this.Savebutton1);
+            this.MaximizeBox = false;
             this.Name = "Save";
             this.Text = "Save";
             this.Load += new System.EventHandler(this.Save_Load);
